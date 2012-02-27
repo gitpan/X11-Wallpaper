@@ -185,7 +185,18 @@ X11::Wallpaper - set X11 wallpaper using best available helper program
 
 =head1 VERSION
 
-version 1.0
+version 1.1
+
+=head1 SYNOPSIS
+
+  use X11::Wallpaper qw(set_wallpaper);
+  set_wallpaper( "./foo.jpg", {
+    mode => 'full',   # default, or: aspect, center, tile
+    setter => 'feh',  # override setter
+    display => ':0.0' # override X display
+  } );
+
+  my @cmd = set_wallaper_command(...); # just give me the command
 
 =head1 DESCRIPTION
 
@@ -225,17 +236,6 @@ the value of the DISPLAY environment variable.
 
 As with C<set_wallpaper>, except returns the command (as a list of
 arguments) instead of executing it.
-
-=head1 SYNOPIS
-
-  use X11::Wallpaper qw(set_wallpaper);
-  set_wallpaper( "./foo.jpg", {
-    mode => 'full',   # default, or: aspect, center, tile
-    setter => 'feh',  # override setter
-    display => ':0.0' # override X display
-  } );
-
-  my @cmd = set_wallaper_command(...); # just give me the command
 
 =head1 CREDITS
 
