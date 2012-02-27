@@ -24,5 +24,6 @@ requires:
   warnings: 0
 resources:
   bugtracker: https://github.com/richardjharris/X11-Wallpaper/issues
+  homepage: http://metacpan.org/release/X11-Wallpaper/
   repository: git://github.com/richardjharris/X11-Wallpaper.git
-version: 0.1
+version: 1.0

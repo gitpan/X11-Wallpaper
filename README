@@ -2,7 +2,7 @@ NAME
     X11::Wallpaper - set X11 wallpaper using best available helper program
 
 VERSION
-    version 0.1
+    version 1.0
 
 DESCRIPTION
     This module provides an interface for setting the background on X11

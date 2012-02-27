@@ -185,7 +185,7 @@ X11::Wallpaper - set X11 wallpaper using best available helper program
 
 =head1 VERSION
 
-version 0.1
+version 1.0
 
 =head1 DESCRIPTION
 
